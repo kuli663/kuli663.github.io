@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport">
+<title>李昊楠 · 履历</title>
+<meta content="李昊楠的个人履历 —— 大连财经学院金融学在读，求职意向：投资经理。" name="description">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700;900&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* 宣纸色系 */
+  --paper:#f7f2e8;
+  --paper-2:#f1e9da;
+  --paper-3:#e9dfc9;
+  --ink:#2b2620;
+  --ink-soft:#5c5346;
+  --ink-mute:#8a7f6d;
+  --ink-faint:#b5a98f;
+  /* 朱砂·黛青 */
+  --cinnabar:#b03a2e;
+  --cinnabar-deep:#8f2c22;
+  --indigo:#3e5f7d;
+  --indigo-deep:#2d485f;
+  --gold:#a8873f;
+  /* 线条 */
+  --line:#ddd2bb;
+  --line-soft:#e6dcc6;
+  --shadow:0 1px 2px rgba(59,48,32,.06),0 10px 34px rgba(59,48,32,.09);
+  --radius:6px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:"Noto Serif SC","Songti SC","STSong","SimSun",serif;
+  color:var(--ink);line-height:1.85;
+  background-color:var(--paper);
+  background-image:
+    radial-gradient(ellipse at 12% 8%, rgba(255,252,244,.85), transparent 55%),
+    radial-gradient(ellipse at 88% 92%, rgba(233,223,201,.7), transparent 55%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0.36 0 0 0 0 0.30 0 0 0 0.20 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+  transition:background .3s,color .3s;
+  overflow-x:hidden;
+}
+::selection{background:var(--cinnabar);color:#fff}
+img{max-width:100%;display:block}
+a{color:var(--indigo);text-decoration:none}
+
+/* ===== 顶部导航 ===== */
+.topbar{
+  position:sticky;top:0;z-index:100;
+  background:rgba(247,242,232,.88);
+  -webkit-backdrop-filter:saturate(140%) blur(14px);
+  backdrop-filter:saturate(140%) blur(14px);
+  border-bottom:1px solid var(--line);
+}
+.topbar::after{
+  content:'';display:block;height:2px;
+  background:linear-gradient(90deg,transparent,var(--cinnabar) 30%,var(--indigo) 70%,transparent);
+  opacity:.55;
+}
+.topbar-inner{
+  max-width:900px;margin:0 auto;padding:11px 20px;
+  display:flex;align-items:center;gap:18px;
+}
+.brand{
+  font-family:"Ma Shan Zheng","Noto Serif SC",serif;
+  font-size:22px;letter-spacing:4px;display:flex;align-items:center;gap:10px;
+}
+.seal-mini{
+  width:24px;height:24px;border-radius:5px;background:var(--cinnabar);
+  color:#fff;font-family:"Noto Serif SC",serif;font-size:13px;font-weight:700;
+  display:grid;place-items:center;letter-spacing:0;
+  box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.55),0 2px 6px rgba(176,58,46,.35);
+  transform:rotate(-4deg);
+}
+.navlinks{display:flex;gap:4px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+.navlinks::-webkit-scrollbar{display:none}
+.navlinks a{
+  font-size:14.5px;color:var(--ink-soft);padding:5px 12px;border-radius:var(--radius);
+  white-space:nowrap;transition:.25s;letter-spacing:2px;position:relative;
+}
+.navlinks a:hover{color:var(--cinnabar)}
+.navlinks a.active{color:var(--cinnabar);font-weight:600}
+.navlinks a.active::after{
+  content:'';position:absolute;left:12px;right:12px;bottom:1px;height:2px;
+  background:var(--cinnabar);border-radius:2px;
+}
+@media(max-width:720px){.navlinks{display:none}}
+
+/* ===== 布局 ===== */
+.wrap{max-width:900px;margin:0 auto;padding:0 20px 90px}
+
+/* ===== 首屏 ===== */
+.hero{padding:60px 0 26px;display:flex;gap:34px;align-items:center;flex-wrap:wrap}
+.seal-wrap{flex-shrink:0;position:relative;animation:sealIn .9s cubic-bezier(.2,.9,.3,1.15) both}
+@keyframes sealIn{from{opacity:0;transform:scale(.6) rotate(8deg)}to{opacity:1;transform:rotate(-3deg)}}
+.seal{
+  width:118px;height:118px;border-radius:12px;background:var(--cinnabar);
+  color:#fdf6ec;font-family:"Ma Shan Zheng","Noto Serif SC",serif;
+  font-size:44px;display:grid;place-items:center;
+  box-shadow:inset 0 0 0 4px rgba(253,246,236,.9),inset 0 0 0 5.5px var(--cinnabar),
+    0 10px 26px rgba(176,58,46,.32);
+  letter-spacing:6px;padding-left:6px;
+}
+.seal::after{
+  content:'';position:absolute;inset:-9px;border:1px solid var(--line);
+  border-radius:16px;pointer-events:none;
+}
+.hero-main{flex:1;min-width:280px}
+.hero h1{
+  font-family:"Ma Shan Zheng","Noto Serif SC",serif;
+  font-size:56px;line-height:1.1;letter-spacing:10px;font-weight:400;
+}
+.hero .tag{
+  display:inline-flex;align-items:center;gap:8px;margin-top:14px;
+  padding:4px 14px 4px 11px;border-radius:3px;
+  background:var(--indigo);color:#f4efe4;font-size:13.5px;letter-spacing:2.5px;
+}
+.hero .tag::before{content:'❋';font-size:11px;opacity:.8}
+.hero .sub{
+  margin-top:14px;color:var(--ink-soft);font-size:15px;letter-spacing:.8px;
+  border-left:3px solid var(--line);padding-left:13px;
+}
+.hero-actions{margin-top:24px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:10px 22px;border-radius:3px;font-size:14.5px;font-weight:600;letter-spacing:2px;
+  border:1px solid var(--ink);background:transparent;color:var(--ink);
+  cursor:pointer;transition:.25s;font-family:inherit;position:relative;
+}
+.btn:hover{background:var(--ink);color:var(--paper);transform:translateY(-2px);box-shadow:var(--shadow)}
+.btn:active{transform:translateY(0) scale(.97)}
+.btn.primary{background:var(--cinnabar);border-color:var(--cinnabar);color:#fdf6ec}
+.btn.primary:hover{background:var(--cinnabar-deep);border-color:var(--cinnabar-deep);color:#fdf6ec}
+@media(max-width:600px){
+  .hero{padding:38px 0 16px;gap:22px}
+  .hero h1{font-size:42px;letter-spacing:7px}
+  .seal{width:92px;height:92px;font-size:34px;border-radius:10px}
+}
+
+/* ===== 卡片（册页） ===== */
+.card{
+  background:linear-gradient(180deg,rgba(255,253,247,.75),rgba(250,245,233,.55));
+  border:1px solid var(--line);border-radius:var(--radius);
+  padding:30px 34px;margin-bottom:22px;box-shadow:var(--shadow);
+  position:relative;transition:transform .35s,opacity .65s,box-shadow .35s;
+}
+.card::before{
+  content:'';position:absolute;inset:5px;border:1px solid var(--line-soft);
+  border-radius:3px;pointer-events:none;
+}
+.card:hover{box-shadow:0 2px 4px rgba(59,48,32,.07),0 16px 40px rgba(59,48,32,.12)}
+@media(max-width:600px){.card{padding:24px 20px}}
+
+.reveal{opacity:0;transform:translateY(26px)}
+.reveal.in{opacity:1;transform:none}
+
+/* 章节题头 */
+h2.sec{
+  font-family:"Ma Shan Zheng","Noto Serif SC",serif;
+  font-size:26px;font-weight:400;letter-spacing:6px;
+  display:flex;align-items:center;gap:14px;margin-bottom:24px;
+}
+h2.sec::after{
+  content:'';flex:1;height:1px;
+  background:linear-gradient(90deg,var(--line),transparent);
+}
+.sec-mark{
+  width:34px;height:34px;flex-shrink:0;border:1.5px solid var(--cinnabar);
+  color:var(--cinnabar);border-radius:5px;display:grid;place-items:center;
+  font-family:"Noto Serif SC",serif;font-size:16px;font-weight:700;
+  transform:rotate(-3deg);letter-spacing:0;
+}
+
+/* ===== 信息网格 ===== */
+.info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:13px}
+.info-item{
+  display:flex;align-items:center;gap:13px;padding:13px 16px;
+  background:var(--paper-2);border:1px solid var(--line-soft);border-radius:4px;
+  transition:.25s;position:relative;
+}
+.info-item::before{
+  content:'';position:absolute;left:0;top:12px;bottom:12px;width:2.5px;
+  background:var(--indigo);opacity:0;transition:.25s;border-radius:2px;
+}
+.info-item:hover{transform:translateX(4px);border-color:var(--line)}
+.info-item:hover::before{opacity:1}
+.info-ico{
+  width:36px;height:36px;border-radius:5px;flex-shrink:0;
+  display:grid;place-items:center;font-size:15px;
+  background:var(--paper);border:1px solid var(--line);color:var(--indigo);
+}
+.info-label{font-size:12px;color:var(--ink-mute);letter-spacing:2px}
+.info-val{font-size:15px;font-weight:600;letter-spacing:.5px;word-break:break-all}
+.info-val[data-copy]{cursor:pointer;display:inline-flex;align-items:center;gap:7px}
+.info-val[data-copy]:hover{color:var(--cinnabar)}
+.copy-hint{font-size:11px;font-weight:500;color:var(--cinnabar);opacity:0;transition:.2s;letter-spacing:1px}
+.info-val[data-copy]:hover .copy-hint{opacity:1}
+
+/* ===== 时间线 ===== */
+.tl{position:relative;padding-left:28px}
+.tl::before{
+  content:'';position:absolute;left:7px;top:8px;bottom:8px;width:1.5px;
+  background:linear-gradient(var(--cinnabar),var(--indigo),transparent);
+}
+.tl-item{position:relative;padding-bottom:6px}
+.tl-item::before{
+  content:'';position:absolute;left:-27px;top:10px;width:10px;height:10px;
+  border-radius:50%;background:var(--paper);border:2.5px solid var(--cinnabar);
+}
+.tl-item + .tl-item{margin-top:20px}
+.tl-item + .tl-item::before{border-color:var(--indigo)}
+.tl-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:12px}
+.tl-head strong{font-size:17.5px;font-weight:700;letter-spacing:2px}
+.tl-date{
+  font-size:13.5px;color:var(--cinnabar);font-weight:600;letter-spacing:1.5px;
+  font-variant-numeric:tabular-nums;
+}
+.tl-body{margin-top:9px;color:var(--ink-soft);font-size:15px;letter-spacing:.5px}
+
+/* ===== 标签 ===== */
+.tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px}
+.tag-pill{
+  padding:4px 13px;border-radius:3px;font-size:13.5px;letter-spacing:1.5px;
+  background:transparent;color:var(--ink-soft);border:1px solid var(--line);
+  transition:.25s;cursor:default;
+}
+.tag-pill:hover{border-color:var(--cinnabar);color:var(--cinnabar);transform:translateY(-2px)}
+.tag-pill.hl{background:var(--indigo);border-color:var(--indigo);color:#f4efe4;font-weight:600}
+
+/* ===== 技能（竖排进度的横条——用"卷轴"意象） ===== */
+.skill{margin-bottom:19px}
+.skill:last-child{margin-bottom:0}
+.skill-top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px}
+.skill-name{font-size:15.5px;font-weight:700;letter-spacing:2.5px}
+.skill-pct{font-size:13px;font-weight:700;color:var(--cinnabar);font-variant-numeric:tabular-nums;letter-spacing:1px}
+.bar{
+  height:9px;border-radius:2px;background:var(--paper-3);
+  border:1px solid var(--line-soft);overflow:hidden;position:relative;
+}
+.bar span{
+  display:block;height:100%;width:0;border-radius:2px;
+  background:linear-gradient(90deg,var(--indigo),var(--indigo-deep));
+  position:relative;transition:width 1.25s cubic-bezier(.25,.9,.3,1);
+}
+.bar span::after{
+  content:'';position:absolute;right:0;top:0;bottom:0;width:3px;
+  background:var(--cinnabar);
+}
+.skill-desc{font-size:13.5px;color:var(--ink-mute);margin-top:7px;line-height:1.8;letter-spacing:.4px}
+
+/* ===== 评价 ===== */
+.quote{
+  font-size:15.5px;color:var(--ink-soft);line-height:2.1;letter-spacing:.8px;
+  border-left:3px solid var(--cinnabar);padding-left:18px;position:relative;
+  text-align:justify;
+}
+.quote::first-letter{
+  font-family:"Ma Shan Zheng","Noto Serif SC",serif;
+  font-size:34px;color:var(--cinnabar);line-height:1;padding-right:2px;
+}
+
+/* ===== 联系表单 ===== */
+.field{margin-bottom:15px}
+.field label{
+  display:block;font-size:13.5px;font-weight:600;color:var(--ink-soft);
+  margin-bottom:7px;letter-spacing:2px;
+}
+.field input,.field textarea{
+  width:100%;padding:11px 15px;border-radius:3px;font-family:inherit;font-size:15px;
+  border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
+  transition:.25s;outline:none;letter-spacing:.5px;
+}
+.field input:focus,.field textarea:focus{
+  border-color:var(--cinnabar);background:#fffdf8;
+  box-shadow:0 0 0 3px rgba(176,58,46,.12);
+}
+.field textarea{resize:vertical;min-height:104px;line-height:1.9}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+@media(max-width:600px){.form-row{grid-template-columns:1fr;gap:0}}
+.form-note{font-size:13px;color:var(--ink-mute);margin-top:6px;letter-spacing:.5px}
+.form-msg{
+  margin-top:13px;padding:11px 16px;border-radius:3px;font-size:14px;font-weight:600;
+  display:none;animation:sealIn .4s both;letter-spacing:.5px;
+}
+.form-msg.ok{display:block;background:rgba(62,95,125,.1);color:var(--indigo-deep);border:1px solid rgba(62,95,125,.3)}
+.form-msg.err{display:block;background:rgba(176,58,46,.09);color:var(--cinnabar-deep);border:1px solid rgba(176,58,46,.3)}
+
+/* ===== 右下工具栏 ===== */
+.dock{position:fixed;right:20px;bottom:20px;z-index:120;display:flex;flex-direction:column;gap:10px}
+.icon-btn{
+  width:44px;height:44px;border-radius:6px;border:1px solid var(--line);
+  background:var(--paper);color:var(--ink-soft);cursor:pointer;font-size:16px;
+  display:grid;place-items:center;transition:.25s;box-shadow:var(--shadow);
+  font-family:inherit;
+}
+.icon-btn:hover{border-color:var(--cinnabar);color:var(--cinnabar);transform:translateY(-2px)}
+.icon-btn:active{transform:scale(.93)}
+#toTop{opacity:0;pointer-events:none;transition:.3s}
+#toTop.show{opacity:1;pointer-events:auto}
+@media(max-width:600px){.dock{right:14px;bottom:14px}.icon-btn{width:41px;height:41px}}
+
+/* ===== 进度条 ===== */
+.progress{
+  position:fixed;top:0;left:0;height:3px;width:0;z-index:200;
+  background:linear-gradient(90deg,var(--cinnabar),var(--indigo));transition:width .1s;
+}
+
+/* ===== Toast ===== */
+.toast{
+  position:fixed;left:50%;bottom:38px;transform:translate(-50%,20px);
+  background:var(--ink);color:var(--paper);padding:11px 24px;border-radius:4px;
+  font-size:14px;font-weight:600;letter-spacing:1.5px;z-index:300;opacity:0;
+  pointer-events:none;transition:.3s;box-shadow:0 10px 30px rgba(43,38,32,.3);
+}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+/* ===== 落款印章 ===== */
+.colophon{
+  text-align:center;margin-top:8px;padding:18px 0 4px;
+  color:var(--ink-mute);font-size:13px;letter-spacing:3px;
+}
+.colophon .seal-end{
+  display:inline-grid;place-items:center;width:30px;height:30px;margin-left:10px;
+  background:var(--cinnabar);color:#fdf6ec;border-radius:5px;font-size:14px;
+  font-family:"Ma Shan Zheng",serif;transform:rotate(-3deg);vertical-align:middle;
+  box-shadow:inset 0 0 0 1.5px rgba(253,246,236,.55);
+}
+
+/* ===== 打印 ===== */
+@media print{
+  .topbar,.dock,.progress,.no-print{display:none!important}
+  body{background:#fff}
+  .card{box-shadow:none;padding:16px 0;border:none;break-inside:avoid}
+  .card::before{display:none}
+  .reveal{opacity:1!important;transform:none!important}
+  .hero{padding:0 0 16px}
+  .bar span{width:var(--w)!important}
+}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand"><span class="seal-mini">楠</span>李昊楠</div>
+    <nav class="navlinks" id="navlinks">
+      <a href="#about">基本</a>
+      <a href="#edu">修学</a>
+      <a href="#skills">技艺</a>
+      <a href="#qualities">品性</a>
+      <a href="#summary">自述</a>
+      <a href="#contact">致函</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- 首屏 -->
+  <section class="hero">
+    <div class="seal-wrap"><div class="seal">昊楠</div></div>
+    <div class="hero-main">
+      <h1>李昊楠</h1>
+      <span class="tag">求职意向 · 投资经理</span>
+      <p class="sub">大连财经学院 · 金融学本科（2023.09 – 2027.06）<br>热爱大数据技术，对新技术与新事物保持敏锐洞察力。</p>
+      <div class="hero-actions">
+        <button class="btn primary" id="dlBtn">印 · 下载履历</button>
+        <a class="btn" href="#contact">函 · 与我通信</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 基本信息 -->
+  <section class="card reveal" id="about">
+    <h2 class="sec"><span class="sec-mark">壹</span>基本信息</h2>
+    <div class="info-grid">
+      <div class="info-item"><div class="info-ico">诞</div><div><div class="info-label">出生年月</div><div class="info-val">2005年9月</div></div></div>
+      <div class="info-item"><div class="info-ico">团</div><div><div class="info-label">政治面貌</div><div class="info-val">团员</div></div></div>
+      <div class="info-item"><div class="info-ico">居</div><div><div class="info-label">籍贯 / 现居地</div><div class="info-val">中国 · 辽宁</div></div></div>
+      <div class="info-item"><div class="info-ico">讯</div><div><div class="info-label">手机</div><div class="info-val" data-copy="15183451072" title="点击复制">15183451072<span class="copy-hint">摹</span></div></div></div>
+      <div class="info-item"><div class="info-ico">驿</div><div><div class="info-label">邮箱</div><div class="info-val" data-copy="3955377650@qq.com" title="点击复制">3955377650@qq.com<span class="copy-hint">摹</span></div></div></div>
+      <div class="info-item"><div class="info-ico">志</div><div><div class="info-label">求职意向</div><div class="info-val">投资经理</div></div></div>
+    </div>
+  </section>
+
+  <!-- 教育背景 -->
+  <section class="card reveal" id="edu">
+    <h2 class="sec"><span class="sec-mark">贰</span>教育背景</h2>
+    <div class="tl">
+      <div class="tl-item">
+        <div class="tl-head">
+          <strong>大连财经学院</strong>
+          <span class="tl-date">2023.09 – 2027.06</span>
+        </div>
+        <div class="tl-body">金融学 · 本科</div>
+        <div class="tags">
+          <span class="tag-pill hl">主修课程</span>
+          <span class="tag-pill">微观经济学</span>
+          <span class="tag-pill">宏观经济学</span>
+          <span class="tag-pill">金融学原理</span>
+          <span class="tag-pill">会计学</span>
+          <span class="tag-pill">统计学</span>
+          <span class="tag-pill">计量学</span>
+          <span class="tag-pill">国际金融学</span>
+          <span class="tag-pill">投资学</span>
+          <span class="tag-pill">公司金融</span>
+          <span class="tag-pill">金融机构管理</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 专业技能 -->
+  <section class="card reveal" id="skills">
+    <h2 class="sec"><span class="sec-mark">叁</span>专业技能</h2>
+    <div id="skillList">
+      <div class="skill" data-pct="85">
+        <div class="skill-top"><span class="skill-name">编程语言</span><span class="skill-pct">85%</span></div>
+        <div class="bar"><span></span></div>
+        <div class="skill-desc">熟练掌握 Java、Python 等编程语言，具备良好的编程基础和编程习惯。</div>
+      </div>
+      <div class="skill" data-pct="82">
+        <div class="skill-top"><span class="skill-name">开发框架</span><span class="skill-pct">82%</span></div>
+        <div class="bar"><span></span></div>
+        <div class="skill-desc">熟悉 Spring、SpringMVC、MyBatis 等主流 Java 开发框架，具备大型项目开发经验。</div>
+      </div>
+      <div class="skill" data-pct="80">
+        <div class="skill-top"><span class="skill-name">数据库</span><span class="skill-pct">80%</span></div>
+        <div class="bar"><span></span></div>
+        <div class="skill-desc">熟练应用 MySQL、Oracle 等数据库管理系统，具备较强的数据库设计和优化能力。</div>
+      </div>
+      <div class="skill" data-pct="75">
+        <div class="skill-top"><span class="skill-name">语言技能</span><span class="skill-pct">75%</span></div>
+        <div class="bar"><span></span></div>
+        <div class="skill-desc">英语 CET-4。</div>
+      </div>
+      <div class="skill" data-pct="88">
+        <div class="skill-top"><span class="skill-name">办公技能</span><span class="skill-pct">88%</span></div>
+        <div class="bar"><span></span></div>
+        <div class="skill-desc">熟悉 WPS 等办公软件，能够高效完成文档与数据处理工作。</div>
+      </div>
+      <div class="skill" data-pct="78">
+        <div class="skill-top"><span class="skill-name">金融专业能力</span><span class="skill-pct">78%</span></div>
+        <div class="bar"><span></span></div>
+        <div class="skill-desc">系统学习投资学、公司金融、金融机构管理等金融核心课程，具备扎实的理论基础。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 综合素质 -->
+  <section class="card reveal" id="qualities">
+    <h2 class="sec"><span class="sec-mark">肆</span>综合素质</h2>
+    <div class="tl">
+      <div class="tl-item">
+        <div class="tl-head"><strong>沟通与协作</strong></div>
+        <div class="tl-body">具备良好的沟通能力和团队协作精神，能够快速融入新环境和新团队。</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-head"><strong>学习与思考</strong></div>
+        <div class="tl-body">拥有良好的自我学习和独立思考能力，能够快速掌握新技术和新产品。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 自我评价 -->
+  <section class="card reveal" id="summary">
+    <h2 class="sec"><span class="sec-mark">伍</span>自我评价</h2>
+    <p class="quote">我是一名热爱大数据技术的学生，对新技术和新事物保持敏锐的洞察力。实习期间认真负责，能够迅速适应新环境和新团队；同时为人乐观向上、善于沟通，希望找到一份与自身专业和兴趣相符的工作，为公司的发展贡献自己的力量。</p>
+  </section>
+
+  <!-- 联系表单 -->
+  <section class="card reveal no-print" id="contact">
+    <h2 class="sec"><span class="sec-mark">陆</span>致函于我</h2>
+    <form id="contactForm" novalidate>
+      <div class="form-row">
+        <div class="field">
+          <label for="cname">阁下称呼 <span style="color:var(--cinnabar)">*</span></label>
+          <input autocomplete="name" id="cname" name="name" placeholder="如：张经理" required type="text">
+        </div>
+        <div class="field">
+          <label for="cemail">回复邮箱 <span style="color:var(--cinnabar)">*</span></label>
+          <input autocomplete="email" id="cemail" name="email" placeholder="you@example.com" required type="email">
+        </div>
+      </div>
+      <div class="field">
+        <label for="cmsg">来函内容 <span style="color:var(--cinnabar)">*</span></label>
+        <textarea id="cmsg" name="message" placeholder="您好，我们有一个投资经理岗位想与您详谈……" required></textarea>
+      </div>
+      <button class="btn primary" id="sendBtn" type="submit">寄出此函</button>
+      <p class="form-note">来函将送至 3955377650@qq.com。本站为静态页面，提交后会唤起您的邮件客户端完成寄送。</p>
+      <div class="form-msg" id="formMsg"></div>
+    </form>
+  </section>
+
+  <p class="colophon no-print">岁在丙午 谨制此卷<span class="seal-end">楠</span></p>
+
+</main>
+
+<div class="dock">
+  <button class="icon-btn" id="shareBtn" title="分享此卷">享</button>
+  <button class="icon-btn" id="toTop" title="回到卷首">首</button>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+(function(){
+  'use strict';
+  var $ = function(s){ return document.querySelector(s); };
+
+  /* ---------- Toast ---------- */
+  var toastEl = $('#toast'), toastTimer;
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('show'); }, 1900);
+  }
+
+  /* ---------- 滚动进度 + 回到顶部 ---------- */
+  var progress = $('#progress'), toTop = $('#toTop');
+  function onScroll(){
+    var h = document.documentElement.scrollHeight - window.innerHeight;
+    var p = h > 0 ? (window.scrollY / h) * 100 : 0;
+    progress.style.width = p.toFixed(2) + '%';
+    toTop.classList.toggle('show', window.scrollY > 320);
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+  toTop.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+
+  /* ---------- 导航高亮 ---------- */
+  var navAs = Array.prototype.slice.call(document.querySelectorAll('#navlinks a'));
+  var sections = navAs.map(function(a){ return document.querySelector(a.getAttribute('href')); }).filter(Boolean);
+  if('IntersectionObserver' in window){
+    var navObs = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          navAs.forEach(function(a){
+            a.classList.toggle('active', a.getAttribute('href') === '#' + en.target.id);
+          });
+        }
+      });
+    }, {rootMargin:'-45% 0px -50% 0px', threshold:0});
+    sections.forEach(function(s){ navObs.observe(s); });
+  }
+
+  /* ---------- 入场动画 + 技能条 ---------- */
+  var reveals = Array.prototype.slice.call(document.querySelectorAll('.reveal'));
+  function animateSkills(){
+    Array.prototype.slice.call(document.querySelectorAll('.skill')).forEach(function(el, i){
+      var pct = el.getAttribute('data-pct') || 0;
+      var bar = el.querySelector('.bar span');
+      bar.style.setProperty('--w', pct + '%');
+      setTimeout(function(){ bar.style.width = pct + '%'; }, i * 140);
+    });
+  }
+  if('IntersectionObserver' in window){
+    var revObs = new IntersectionObserver(function(entries, obs){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          en.target.classList.add('in');
+          if(en.target.id === 'skills') animateSkills();
+          obs.unobserve(en.target);
+        }
+      });
+    }, {threshold:0.12, rootMargin:'0px 0px -60px 0px'});
+    reveals.forEach(function(el){ revObs.observe(el); });
+  } else {
+    reveals.forEach(function(el){ el.classList.add('in'); });
+    animateSkills();
+  }
+
+  /* ---------- 点击复制 ---------- */
+  Array.prototype.slice.call(document.querySelectorAll('[data-copy]')).forEach(function(el){
+    el.addEventListener('click', function(){
+      var txt = el.getAttribute('data-copy');
+      function fallback(){
+        var ta = document.createElement('textarea');
+        ta.value = txt; ta.style.position = 'fixed'; ta.style.opacity = '0';
+        document.body.appendChild(ta); ta.select();
+        try { document.execCommand('copy'); toast('已摹入囊中：' + txt); }
+        catch(e){ toast('复制失败，请手动选择'); }
+        document.body.removeChild(ta);
+      }
+      if(navigator.clipboard && window.isSecureContext){
+        navigator.clipboard.writeText(txt).then(function(){ toast('已摹入囊中：' + txt); }, fallback);
+      } else { fallback(); }
+    });
+  });
+
+  /* ---------- 分享 / 复制链接 ---------- */
+  $('#shareBtn').addEventListener('click', function(){
+    var url = location.href;
+    var title = '李昊楠 · 履历';
+    if(navigator.share){
+      navigator.share({title:title, text:'吾之履历，敬请一览', url:url}).catch(function(){});
+      return;
+    }
+    function done(){ toast('链接已复制，可传与友人'); }
+    if(navigator.clipboard && window.isSecureContext){
+      navigator.clipboard.writeText(url).then(done, function(){ prompt('复制链接：', url); });
+    } else { prompt('复制链接：', url); }
+  });
+
+  /* ---------- 下载简历（打印为 PDF） ---------- */
+  $('#dlBtn').addEventListener('click', function(){
+    toast('在弹窗中选择「另存为 PDF」即可收存');
+    setTimeout(function(){ window.print(); }, 400);
+  });
+
+  /* ---------- 联系表单 ---------- */
+  var form = $('#contactForm'), formMsg = $('#formMsg'), sendBtn = $('#sendBtn');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var name = $('#cname').value.trim();
+    var email = $('#cemail').value.trim();
+    var msg = $('#cmsg').value.trim();
+    formMsg.className = 'form-msg';
+
+    if(!name || !email || !msg){
+      formMsg.className = 'form-msg err';
+      formMsg.textContent = '称呼、邮箱与来函内容皆需填写，方能寄出。';
+      return;
+    }
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)){
+      formMsg.className = 'form-msg err';
+      formMsg.textContent = '邮箱格式似有舛误，烦请复核。';
+      return;
+    }
+
+    sendBtn.disabled = true;
+    var oldText = sendBtn.textContent;
+    sendBtn.textContent = '寄送中…';
+
+    var body = '称呼：' + name + '\r\n邮箱：' + email + '\r\n\r\n来函内容：\r\n' + msg;
+    var mailto = 'mailto:3955377650@qq.com'
+      + '?subject=' + encodeURIComponent('【履历来函】来自 ' + name)
+      + '&body=' + encodeURIComponent(body);
+
+    setTimeout(function(){
+      window.location.href = mailto;
+      sendBtn.disabled = false;
+      sendBtn.textContent = oldText;
+      formMsg.className = 'form-msg ok';
+      formMsg.textContent = '已唤起邮件客户端，函件寄出后我当尽快回复。';
+      toast('多谢来函！');
+    }, 320);
+  });
+
+  /* ---------- 键盘快捷键 ---------- */
+  document.addEventListener('keydown', function(e){
+    if(e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+    if(e.key === 'Home'){ window.scrollTo({top:0, behavior:'smooth'}); }
+  });
+})();
+</script>
+</body>
+</html>
