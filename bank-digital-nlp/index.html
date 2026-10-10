@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>商业银行数字化转型测度 · 预演毕业论文</title>
+<style>
+body{font-family:'Microsoft YaHei','PingFang SC',sans-serif;max-width:900px;margin:0 auto;padding:36px 20px;color:#1a1a1a;line-height:1.8}
+h1{font-size:1.55em;border-bottom:3px solid #2c5f8a;padding-bottom:10px}
+h2{font-size:1.15em;color:#2c5f8a;margin-top:1.8em}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.92em}
+th,td{border:1px solid #bbb;padding:7px 11px;text-align:left}
+th{background:#eef3f8}
+.card{background:#f6f9fc;border:1px solid #d7e3ef;border-radius:10px;padding:16px 20px;margin:14px 0}
+.grid{display:flex;flex-wrap:wrap;gap:12px}
+.grid .card{flex:1 1 180px;text-align:center}
+.num{font-size:1.7em;font-weight:bold;color:#2c5f8a}
+a{color:#2c5f8a;text-decoration:none}
+a:hover{text-decoration:underline}
+.tag{display:inline-block;background:#e8f0e5;color:#386641;border-radius:4px;padding:1px 8px;font-size:.8em;margin-right:6px}
+ol.steps li{margin:.5em 0}
+footer{margin-top:3em;color:#777;font-size:.85em;border-top:1px solid #ddd;padding-top:12px}
+code{background:#f0f0f0;padding:1px 5px;border-radius:4px}
+</style>
+</head>
+<body>
+<h1>基于年报文本挖掘的商业银行数字化转型测度研究</h1>
+<p><strong>预演毕业论文</strong> · 金融文本挖掘与NLP测度构建 · 2023级金融1班 · 指导教师：王宇扬 · 2026年10月</p>
+<p>
+<span class="tag">NLP测度</span><span class="tag">词典法</span><span class="tag">五步流水线</span><span class="tag">信效度检验</span><span class="tag">可复现</span>
+</p>
+
+<h2>研究概览</h2>
+<p>运用NLP测度构建方法，基于12家上市商业银行2015—2024年年报文本（固定种子的模拟语料，真实值已知），构建银行—年度层面数字化转型指数（DigitalIndex = ln(1+关键词总词频)），四维27词词典，完成描述性统计、Cronbach's α信度检验、相关与OLS回归效度检验的完整闭环。全部代码纯Python标准库实现，一键复现。</p>
+
+<div class="grid">
+<div class="card"><div class="num">120</div>银行—年度观测<br>12家银行 × 10年</div>
+<div class="card"><div class="num">0.681</div>Cronbach's α<br>四维度信度</div>
+<div class="card"><div class="num">0.479</div>指数与ROA<br>相关系数</div>
+<div class="card"><div class="num">0.282***</div>OLS回归系数<br>t = 6.98，R² = 0.425</div>
+</div>
+
+<h2>主要发现</h2>
+<table>
+<tr><th>发现</th><th>证据</th></tr>
+<tr><td>数字化话语十年单调上升，2020年后增速放缓</td><td>指数年度均值 2.745（2015）→ 3.784（2024），累计+1.04个对数单位</td></tr>
+<tr><td>截面区分度清晰：平安、招商、宁波银行居前</td><td>平安3.546、招商3.513、宁波3.368 vs 兴业3.241，与市场公认格局一致（已知群体效度）</td></tr>
+<tr><td>后发银行呈"追赶效应"</td><td>交行、兴业、浦发累计增幅超1.2，先行银行基数高、增幅小</td></tr>
+<tr><td>指数与经营绩效显著正相关（效标效度）</td><td>r = 0.479；回归 β = 0.282（t = 6.98，1%显著）</td></tr>
+</table>
+
+<h2>五步流水线</h2>
+<ol class="steps">
+<li><strong>数据获取</strong>：构建银行—年度年报文本语料（模拟，SEED=20261010固定）</li>
+<li><strong>文本预处理</strong>：正则清洗标点/空白/数字/字母，保留纯汉字序列</li>
+<li><strong>词典构建</strong>：四维27词（数字技术 / 数字渠道 / 数字产品与服务 / 数字战略与组织）</li>
+<li><strong>测度计算</strong>：关键词词频法 DigitalIndex = ln(1+总词频)，另输出四维得分与每千字词频</li>
+<li><strong>信效度检验</strong>：描述统计 → Cronbach's α → 相关分析 → OLS回归</li>
+</ol>
+
+<h2>材料下载与查看</h2>
+<table>
+<tr><th>提交材料</th><th>文件</th><th>说明</th></tr>
+<tr><td>预演论文全文</td><td><a href="thesis.html">在线阅读（HTML）</a> · <a href="thesis/预演毕业论文.md">Markdown源文件</a></td><td>约6900字：摘要/绪论/方法/分析/结论 + 12篇参考文献</td></tr>
+<tr><td>可复现代码</td><td><a href="code/pipeline.py">pipeline.py</a></td><td>五步流水线，纯标准库，<code>python code/pipeline.py</code> 一键运行</td></tr>
+<tr><td>测度结果表</td><td><a href="data/bank_digital_index_panel.csv">bank_digital_index_panel.csv</a></td><td>120行银行—年度面板，Excel可直接打开</td></tr>
+<tr><td>测度词典</td><td><a href="data/digital_dictionary.txt">digital_dictionary.txt</a></td><td>四维度27个关键词</td></tr>
+<tr><td>检验结果</td><td><a href="results/analysis_results.json">analysis_results.json</a></td><td>描述统计 / α / 相关 / 回归全部数值</td></tr>
+<tr><td>数据来源说明</td><td><a href="docs/数据来源说明.md">数据来源说明.md</a></td><td>每个文件的来源与处理步骤</td></tr>
+<tr><td>项目说明</td><td><a href="README.md">README.md</a></td><td>仓库结构与复现指南</td></tr>
+</table>
+
+<footer>
+<strong>局限声明</strong>：本研究为预演毕业论文，语料与财务变量为固定随机种子的模拟数据，用于在真实值已知条件下验证测度方法的有效性，回归结果不构成数字化转型经济后果的经验证据。正式论文阶段将以巨潮资讯网真实年报语料替换，并引入word2vec词典扩充与因果识别。<br>
+课程作业 · 2023级金融1班 · 指导教师：王宇扬 · 由 pipeline.py（SEED=20261010）生成的全部结果可完全复现
+</footer>
+</body>
+</html>
